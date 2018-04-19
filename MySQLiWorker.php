@@ -8,17 +8,7 @@ class MySQLiWorker {
     public $dbPassword;
     public $connectLink = null;
 
-    //Чтобы нельзя было создать через вызов new MySQLiWorker
-    private function __construct() { /* ... */
-    }
-
-    //Чтобы нельзя было создать через клонирование
-    private function __clone() { /* ... */
-    }
-
-    //Чтобы нельзя было создать через unserialize
-    private function __wakeup() { /* ... */
-    }
+    
 
     //Получаем объект синглтона
     public static function getInstance($dbName, $dbHost, $dbUser, $dbPassword) {
